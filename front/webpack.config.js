@@ -36,7 +36,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname, "dist/")
         },
-        port: 3030
+        port: 3031
     },
     plugins: [
         new HtmlWebpackPlugin({

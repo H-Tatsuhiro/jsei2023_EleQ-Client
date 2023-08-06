@@ -22,7 +22,7 @@ function Client() {
         }
         else {
             const jsd = JSON.stringify([{ "data" : postData}]);
-            fetch('http://localhost:5000/encode', {
+            fetch('http://localhost:5001/encode', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -13,7 +13,7 @@ function SubImg(props) {
         reader.onload = (event) => {
             const base64Text = event.currentTarget.result.split(',')[1]
              const jsd = JSON.stringify([{ "data" : base64Text}]);
-            fetch('http://localhost:5000/decode', {
+            fetch('http://localhost:5001/decode', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'
